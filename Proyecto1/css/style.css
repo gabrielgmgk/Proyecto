@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+@font-face { 
+    font-family: "Geizer"; 
+    src: url("../fonts/Geizer.otf");}
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css');
+
+body{
+
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/fondo2.jpg);
+    background-repeat: repeat;   
+}
+.textRed{
+    color: rgb(221, 2, 50, 0.908);
+}
+
+p{ 
+    color: rgb(16, 16, 16);
+    font-weight: 300;
+    font-size: 64;
+    line-height: 30px;
+    margin-top: auto;
+    padding: 4px;
+    text-align: center;
+
+}
+img{
+    max-width: 100%;
+}
+.center{
+    text-align: center;
+}
+.nav{
+    justify-content: center;
+}
+.logo{
+    max-width: 100%;
+    width: 350px; 
+    pointer-events: none;
+  }
+
+.box{
+    box-sizing: border-box;
+    background-color: rgb(166, 166, 166);
+    width: fit-content; height: auto;   
+    margin: 0 auto; margin-bottom: 80px; margin-top: 20px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.icons{
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+}
+.icons a{
+    font-size: 30px;
+}
+   
+
+.textBox{
+    box-sizing: border-box;
+    background-color: rgb(166, 166, 166);
+    width: 80%; height: auto;
+    margin: 0 auto; margin-bottom: 20px; margin-top: auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.bloque{
+    justify-items: center;
+    display: flex;
+    align-items: center;
+}
+.bloque:first-child{
+    width: 33%;
+    padding-left: 20px;
+}
+.tabla{
+    padding: 5px;
+    font-size: 2.8rem;
+    margin: 0 auto; margin-top: 50px; margin-bottom:50px;
+    border: 1px solid black;
+    border-radius: 2%;
+    background-color: rgb(166, 166, 166);
+}
+
+.bordeTabla{
+    border: 1px solid black;
+}
+
+.pDestacados{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.space{
+    padding: 30px;
+}
+
+.navbar a{
+    font-family: geizer !important;
+    font-size: 20px;
+    color: brown;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}

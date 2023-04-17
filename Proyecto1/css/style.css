@@ -18,6 +18,10 @@ body{
     color: rgb(221, 2, 50, 0.908);
 }
 
+h2{
+    padding: 10px;
+}
+
 p{ 
     color: rgb(16, 16, 16);
     font-weight: 300;
@@ -30,13 +34,23 @@ p{
 }
 img{
     max-width: 100%;
+    pointer-events: none;
 }
 .center{
     text-align: center;
 }
+
 .nav{
     justify-content: center;
 }
+.navbar a{
+    font-family: geizer !important;
+    font-size: 20px;
+    color: rgb(189, 9, 48);
+}
+nav .navbar-nav li a{
+    color: rgb(189, 9, 48) !important;
+    }
 .logo{
     max-width: 100%;
     width: 350px; 
@@ -66,31 +80,12 @@ img{
     box-sizing: border-box;
     background-color: rgb(166, 166, 166);
     width: 80%; height: auto;
-    margin: 0 auto; margin-bottom: 20px; margin-top: auto;
+    margin: 0 auto; 
+    margin-bottom: 20px; 
+    margin-top: auto;
     padding: 20px;
     border-radius: 5px;
-}
-
-.bloque{
-    justify-items: center;
-    display: flex;
-    align-items: center;
-}
-.bloque:first-child{
-    width: 33%;
-    padding-left: 20px;
-}
-.tabla{
-    padding: 5px;
-    font-size: 2.8rem;
-    margin: 0 auto; margin-top: 50px; margin-bottom:50px;
-    border: 1px solid black;
-    border-radius: 2%;
-    background-color: rgb(166, 166, 166);
-}
-
-.bordeTabla{
-    border: 1px solid black;
+    font-size: x-large;
 }
 
 .pDestacados{
@@ -114,4 +109,102 @@ img{
 .carousel-control-next,
 .carousel-control-prev /*, .carousel-indicators */ {
     filter: invert(100%);
+}
+
+.table{
+    margin: auto;
+}
+.promociones{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+@media screen and (max-width: 900px) {
+    .promociones{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+
+.promo15{
+    width: 400px;
+    height: 600px;
+    margin: auto;
+    border-radius: 2%;
+}
+
+.informacion{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   }
+   @media screen and (max-width: 800px) {
+    .informacion{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+   }
+    
+iframe {
+    max-width: 100%;
+    height: 500px;
+    width: 600px;
+    border-radius: 3%;
+   }
+
+   @media screen and (max-width: 800px){
+    iframe{
+        width: 400px;
+        height: 300px;
+    }
+}
+
+.pie-pagina{
+    font-family: Geizer;
+    width: 100%;
+    background-color: rgb(166, 166, 166);
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 20px 0px;
+
+}
+.pie-pagina .grupo-1 .box1 figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box1 h2{
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .s-media a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: rgb(221, 2, 50);
+    margin-right: 10px;
+    background-color: rgb(116, 116, 116);
+    border-radius: 20%;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .s-media a:hover{
+    color: rgb(33, 32, 32);
+}
+@media screen and (max-width: 800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
 }

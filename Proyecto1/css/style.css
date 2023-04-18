@@ -7,9 +7,6 @@
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css');
 
 body{
-
-    display: flex;
-    flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     background-image: url(../img/fondo2.jpg);
     background-repeat: repeat;   
@@ -36,12 +33,16 @@ img{
     max-width: 100%;
     pointer-events: none;
 }
+p{
+    font-size: 20px;
+}
 .center{
     text-align: center;
 }
 
 .nav{
     justify-content: center;
+    cursor: pointer;
 }
 .navbar a{
     font-family: geizer !important;
@@ -58,12 +59,13 @@ nav .navbar-nav li a{
   }
 
 .box{
-    box-sizing: border-box;
+    box-sizing: fit-content;
     background-color: rgb(166, 166, 166);
-    width: fit-content; height: auto;   
-    margin: 0 auto; margin-bottom: 80px; margin-top: 20px;
-    padding: 40px;
-    border-radius: 20px;
+    height: auto;
+    margin: 0 auto; 
+    padding: 90px;
+    border-radius: 5px;
+
 }
 
 .icons{
@@ -77,15 +79,22 @@ nav .navbar-nav li a{
    
 
 .textBox{
-    box-sizing: border-box;
+    box-sizing: fit-content;
     background-color: rgb(166, 166, 166);
-    width: 80%; height: auto;
+    width: 80%; 
+    height: auto;
     margin: 0 auto; 
     margin-bottom: 20px; 
     margin-top: auto;
     padding: 20px;
     border-radius: 5px;
     font-size: x-large;
+    
+} @media  screen and (max-width: 900px) {
+    .textBox{
+        font-size: medium;
+    }
+    
 }
 
 .pDestacados{
@@ -114,24 +123,66 @@ nav .navbar-nav li a{
 .table{
     margin: auto;
 }
-.promociones{
+.grupoProductos{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    
-}
-@media screen and (max-width: 900px) {
-    .promociones{
-        grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 3fr);
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    }  @media screen and (max-width:1200) {
+        .grupoProductos{
+            
+        }
+        
+    }
+.cajaCondiciones{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+} @media  screen and (max-width: 800px) {
+    .cajaCondiciones{
+        
+        
     }
     
 }
 
+.bannerbp{
+    width: auto;
+} @media screen and (max-width: 1000px) {
+    .bannerbp{
+        width: 100%;
+        
+    }
+    
+}
+
+.condiciones{
+    width: 50%;
+    
+    
+    } @media  screen and (max-width: 1000px) {
+        .condiciones{
+            width: 100%;
+            max-height: fit-content;         
+        }
+        
+    }
+
 .promo15{
     width: 400px;
     height: 600px;
-    margin: auto;
     border-radius: 2%;
-}
+    } @media screen and (max-width: 500px) {
+        .promo15{
+            width: 250px;
+            height: 400px;
+        }
+        
+    } 
 
 .informacion{
     display: grid;
@@ -143,6 +194,22 @@ nav .navbar-nav li a{
     }
     
    }
+
+.grupoContacto{
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    
+}
+.formularioContacto{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: large;
+    padding: 50px;
+}
+.mapaContacto{
+    padding: 50px;
+}
     
 iframe {
     max-width: 100%;
